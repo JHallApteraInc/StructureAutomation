@@ -9,12 +9,12 @@ namespace StructureAuto.PageObjects
         {
 
         }
-        internal void VisitReportPage()
+        internal void VisitEditReportPage()
         {
             Visit("/reporting/designer.aspx?id=1056");
         }
 
-        internal void ClickCustomize()
+        internal void CustomizeReport()
         {
            
             By fieldButton = By.XPath("//*[@id='ReportDesigner']/div/div/div[1]/div[7]/div[1]/div/div[3]/div[1]/div/input");

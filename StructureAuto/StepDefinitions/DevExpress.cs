@@ -43,14 +43,14 @@ namespace StructureAuto.StepDefinitions
         public void GivenIAmOnTheReportsPage()
         {
             ReportPage reportPage = new ReportPage(Driver);
-            reportPage.VisitReportPage();
+            reportPage.VisitEditReportPage();
         }
 
         [When(@"I attempt to customize a report")]
         public void WhenIAttemptToCustomizeAReport()
         {
             ReportPage reportPage = new ReportPage(Driver);
-            reportPage.ClickCustomize();
+            reportPage.CustomizeReport();
         }
 
         [Then(@"the result is that I do not see an awkward error")]
